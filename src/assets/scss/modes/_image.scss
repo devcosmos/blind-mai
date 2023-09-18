@@ -1,0 +1,32 @@
+html[data-image-display='onFilter'] {
+  main, footer {
+    img,
+    svg,
+    .heroes-image,
+    .fotorama {
+      -webkit-filter: var(--img-filter);
+      -moz-filter: var(--img-filter);
+      -o-filter: var(--img-filter);
+      -ms-filter: var(--img-filter);
+      filter: var(--img-filter);
+    }
+  }
+}
+html[data-image-display='off'] {
+  main, footer {
+    .card-pinned,
+    .fotorama,
+    .device-browser,
+    img,
+    svg {
+      display: none !important;
+    }
+    .card > *,
+    .heroes-image {
+      background-image: none !important;
+    }
+    .swiper-heroes .swiper-slide .heroes-image {
+     padding-bottom: 0; 
+    }
+  }
+}

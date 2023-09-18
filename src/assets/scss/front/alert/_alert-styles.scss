@@ -1,0 +1,13 @@
+/*------------------------------------
+  Alert Styles
+------------------------------------*/
+.alert {
+  --bs-alert-color: var(--bs-body-bg);
+  --bs-alert-bg: var(--bs-body-color);
+  --bs-alert-border-color: var(--bs-body-color);
+  *, 
+  &[class*=text]:not(.btn),
+  [class*=text]:not(.btn) {
+    color: var(--bs-body-bg) !important;
+  }
+}

@@ -1,0 +1,67 @@
+/*------------------------------------
+  Form Check
+------------------------------------*/
+
+.form-check-label {
+  font-size: $form-check-font-size;
+  margin-top: $form-check-margin-y;
+}
+
+.form-check {
+  .form-check-label {
+    margin-top: 0;
+  }
+}
+
+label.form-control,
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+}
+
+.form-check-input {
+  position: relative;
+  margin-right: 1.5rem;
+  margin-top: 0;
+  &:hover,
+  &:focus,
+  &:active,
+  &:focus-within,
+  &:focus-visible {
+    border-color: inherit;
+    box-shadow: none;
+    outline: $outline;
+    outline-offset: $border-width;
+  }
+  &:checked[type=checkbox] {
+    &::after {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Pro";
+      color: var(--bs-body-bg);
+      font-size: 1.3rem;
+      line-height: 1;
+      display: flex;
+      font-weight: 800;
+      justify-content: center;
+    }
+  }
+}
+
+input.btn-check:checked ~ label {
+  text-decoration: underline;
+}
+input.btn-check:focus-within  ~ label {
+  outline: $outline !important;
+  outline-offset: $outline-offset;
+}
+
+// Validation
+.was-validated .form-check-input:valid,
+.form-check-input.is-valid {
+  border: $form-check-input-border;
+}
+
+.was-validated .form-check-input:valid ~ .form-check-label,
+.form-check-input.is-valid ~ .form-check-label {
+  color: $form-check-label-color;
+}

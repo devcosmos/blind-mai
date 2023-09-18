@@ -1,0 +1,25 @@
+html[data-font-size='sm'] {
+  font-size: 20px;
+}
+html[data-font-size='md'] {
+  font-size: 26px;
+}
+html[data-font-size='lg'] {
+  font-size: 30px;
+}
+
+html[data-letter-spacing='sm'] {
+  * {
+    letter-spacing: normal;
+  }
+}
+html[data-letter-spacing='md'] {
+  * {
+    letter-spacing: .15em;
+  }
+}
+html[data-letter-spacing='lg'] {
+  * {
+    letter-spacing: .6em;
+  }
+}

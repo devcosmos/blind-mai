@@ -1,0 +1,36 @@
+/*------------------------------------
+  File for your custom SCSS style
+------------------------------------*/
+
+body {
+  overflow-x: hidden;
+}
+main img:not(.img-captcha) {
+  max-width: 100%;
+  height: auto;
+}
+main ul {
+  list-style: none;
+  padding-left: 3rem;
+  li:not(.list-inline-item) {
+    position: relative;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    &::before {
+      position: absolute;
+      // top: calc(50% - .5rem / 2);
+      top: .5rem;
+      left: -2rem;
+      color: var(--bs-body-color);
+      font-family: "Font Awesome 6 Pro";
+      font-size: .5rem;
+      line-height: 1;
+      font-weight: 600;
+      content: '\f111';
+    }
+  }
+}
+.d-blind-none {
+  display: none !important;
+}
+

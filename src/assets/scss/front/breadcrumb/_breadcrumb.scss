@@ -1,0 +1,54 @@
+/*------------------------------------
+  Breadcrumb
+------------------------------------*/
+
+.breadcrumb {
+  padding-top: 2rem;
+	padding-bottom: 2rem;
+	overflow: hidden;
+  .breadcrumb-item {
+    color: var(--bs-body-color);
+    list-style: none;
+    a {
+      text-decoration: none;
+      &:focus,
+      &:hover,
+      &:active,
+      &:focus-within,
+      &:focus-visible {
+        outline: none;
+        text-decoration: underline;
+      }
+    }
+  }
+  @media all and (max-width: 991.98px) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+.swiper-breadcrumb {
+	overflow: visible;
+  .swiper-slide {
+    width: auto;
+    white-space: nowrap;
+  }
+}
+@media all and (max-width: 1199.98px) {
+	.swiper-breadcrumb .swiper-slide:last-child
+	{
+		margin-right: var(--gap-viewport) !important;
+	}
+}
+
+// .breadcrumb .breadcrumb-item a,
+// .breadcrumb-item+.breadcrumb-item::before {
+// 	color: var(--bs-black);
+// }
+// .breadcrumb .breadcrumb-item a:hover,
+// .breadcrumb .breadcrumb-item a:focus,
+// .breadcrumb .breadcrumb-item a:active {
+// 	color: var(--color-link-hover);
+// }
+
+
+/* submenu */

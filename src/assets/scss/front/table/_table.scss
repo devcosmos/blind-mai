@@ -1,0 +1,213 @@
+/*------------------------------------
+  Tables
+------------------------------------*/
+.table {
+  --bs-table-hover-bg: var(--bs-body-bg);
+  border-color: var(--border-color);
+  margin-bottom: 0;
+  th, thead th {
+    font-weight: 600;
+    font-size: $h3-font-size;
+    // color: var(--bs-body-bg);
+    // background-color: var(--bs-body-color)!important;
+  }
+  td *:last-child {
+    margin-bottom: 0;
+  }
+}
+.table-container {
+  margin-bottom: 1.5rem;
+  .table-container__btn {
+    line-height: 1.2;
+  }
+}
+.accordion-collapse > .accordion-body .table-container:last-child {
+  margin-bottom: 0;
+}
+
+.open--table {
+  .table-container__tip,
+  .table-container__caption,
+  .scrollbar {
+	  display: none !important;
+  }
+}
+
+/* style for sticky scrollbar  */
+
+.table-container__body {
+  > div:first-child {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    border: $border-width solid var(--border-color);
+  }
+  > div:last-child {
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    border: $border-width solid var(--border-color);
+  }
+  .content {
+    position: relative;
+    margin: -$border-width;
+    width: calc(100% + (2 * $border-width));
+  }
+  .content._with-scrollbar {
+    overflow-x: scroll;
+    bottom: -17px;
+    margin-top: -18px;
+  }
+  .scrollbar {
+    height: calc(20px + (2 * $border-width));
+    left: 0;
+    bottom: 0px;
+    margin-top: -2px;
+    position: sticky;
+    overflow: hidden;
+    background-color:  var(--scrollbar-bg-color);
+    border-top: 1px solid var(--border-color);
+    &:hover .scroller > div,
+    &:active .scroller > div,
+    &:focus-visible .scroller > div {
+      margin: 3px 6px;
+      height: 13px;
+    }
+    .scroller {
+      left: 0;
+      position: absolute;
+      > div {
+        border-radius: 6px;
+        background: var(--scrollbar-color);
+        cursor: pointer;
+        margin: 6px;
+        height: 8px;
+      }
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .table-container__body .content._with-scrollbar {
+		bottom: -8px;
+		margin-top: -10px;
+	}
+	.table-container__body .scrollbar {
+		height: 14px;
+	}
+	.table-container__body table {
+		border-top-left-radius: .5rem;
+		border-top-right-radius: .5rem;
+		overflow: hidden;
+		border-top: $border-width solid var(--border-color);
+		border-left: $border-width solid var(--border-color);
+		border-right: $border-width solid var(--border-color);
+	}
+	.table-container__body .content {
+		border-top-left-radius: .75rem;
+		border-top-right-radius: .75rem;
+		overflow: hidden;
+	}
+	.table-container__body > div:last-child {
+		border-bottom-left-radius: 6px;
+		border-bottom-right-radius: 6px;
+	}
+	// .table>:not(caption)>tr:last-child>* {
+    	// padding: .75rem .75rem 1.5rem .75rem;
+	// }
+	.table-container__body .scroller > div {
+		margin: 3px 3px 3px 3px;
+		height: 6px;
+	}
+	.table-container__body .scrollbar:hover .scroller > div,
+	.table-container__body .scrollbar:active .scroller > div,
+	.table-container__body .scrollbar:focus-visible .scroller > div
+	{
+		margin: 3px 3px 4px 3px;
+		height: 6px;
+	}
+}
+/* style for sticky scrollbar  */
+
+
+// .table {
+//   th {
+//     font-weight: $table-th-font-weight;
+//   }
+
+//   tr {
+//     color: $table-body-color;
+//   }
+
+//   thead th {
+//     color: $table-thead-th-color;
+//     font-weight: $table-thead-th-font-weight;
+//   }
+
+//   > :not(:last-child) > :last-child > * {
+//     border-bottom-color: $table-thead-border-color;
+//   }
+
+//   > :not(caption) > *:last-child > * {
+//     border-bottom-width: 0;
+//   }
+
+//   .btn {
+//     white-space: nowrap;
+//   }
+// }
+
+// // Nowrap
+// .table-nowrap {
+//   th, td {
+//     white-space: nowrap;
+//   }
+// }
+
+// // Align Middle
+// .table-align-middle {
+//   tbody tr, th, td {
+//     vertical-align: middle;
+//   }
+// }
+
+// // Text Center
+// .table-text-center {
+//   &, th, td {
+//     text-align: center;
+//   }
+// }
+
+// // Text End
+// .table-text-end {
+//   &, th, td {
+//     text-align: right;
+//   }
+// }
+
+// // thead Light
+// .thead-light th {
+//   background-color: $table-thead-light-bg;
+// }
+
+// // Small Size
+// .table-lg {
+//   > :not(caption) > * > * {
+//     padding: $table-cell-padding-y-lg $table-cell-padding-x-lg;
+//   }
+// }
+
+// // Thead Bordered
+// .table-thead-bordered {
+//   > :not(:last-child) > :last-child > * {
+//     border-top: $table-border-width solid $table-border-color;
+//     border-bottom: $table-border-width solid $table-border-color;
+//   }
+// }
+
+// // Vertical Border Striped
+// .table-vertical-border-striped {
+//   > thead > tr > th:not(:first-child):not(:last-child),
+//   > tbody > tr > td:not(:first-child):not(:last-child) {
+//     border-right: $table-border-width solid $table-border-color;
+//   }
+// }

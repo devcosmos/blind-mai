@@ -1,0 +1,17 @@
+/*------------------------------------
+  Step Colors
+------------------------------------*/
+
+@each $color, $value in $theme-colors {
+  .step-icon-#{$color} {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .step-icon-soft-#{$color} {
+    background-color: var(--bs-body-color);
+    color: var(--bs-body-bg);
+  }
+}

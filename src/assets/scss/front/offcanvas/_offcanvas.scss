@@ -1,0 +1,24 @@
+/*------------------------------------
+  Offcanvas
+------------------------------------*/
+.offcanvas-header {
+  padding-top: $offcanvas-header-padding-y;
+  padding-bottom: $offcanvas-header-padding-y;
+  border-bottom: $offcanvas-border-width solid $offcanvas-header-border-bottom-color;
+}
+
+.offcanvas.offcanvas-navbar-search {
+  bottom: auto;
+  height: auto;
+}
+
+//custom 
+.offcanvas {
+  --bs-offcanvas-bg: var(--bs-body-bg);
+  transition: none;
+  &.offcanvas-with-navbar {
+    overflow-y: auto;
+    border-right: none;
+    top: $navbar-height;
+  }
+}

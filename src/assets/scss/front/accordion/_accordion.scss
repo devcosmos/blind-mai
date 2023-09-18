@@ -1,0 +1,23 @@
+/*------------------------------------
+  Accordion
+------------------------------------*/
+
+.accordion-items {
+  --bs-accordion-body-padding-y: #{$accordion-padding-y};
+  --bs-accordion-body-padding-x: #{$accordion-padding-x};
+  border: $border-width solid var(--border-color);
+  border-radius: $border-radius;
+  .accordion-item {
+    .accordion-button {
+      pointer-events: none;
+      padding: $accordion-padding-y $accordion-padding-x;
+      font-size: $h3-font-size;
+      border-bottom: $border-width solid var(--border-color);
+      text-decoration: none;
+      font-weight: $font-weight-semi-bold;
+    }
+    &:not(:first-child) .accordion-button {
+      border-top: $border-width solid var(--border-color);
+    }
+  }
+}

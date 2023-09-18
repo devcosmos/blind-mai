@@ -1,0 +1,29 @@
+/*------------------------------------
+  Form Attachment
+------------------------------------*/
+
+.form-attachment-btn {
+	position: relative;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.form-attachment-btn-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  cursor: inherit;
+  opacity: 0;
+}
+// input[type=file]::file-selector-button {
+//   background-color: var(--bs-body-bg);
+//   color: var(--bs-body-color);
+// }
+// div:hover > input[type=file]::file-selector-button {
+//   background-color: var(--bs-body-bg);
+//   color: var(--bs-body-color);
+//   text-decoration: underline;
+// }

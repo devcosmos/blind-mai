@@ -1,0 +1,43 @@
+/*------------------------------------
+  Close Button
+------------------------------------*/
+
+.btn-close {
+  color: var(--bs-body-color);
+  background: none;
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  line-height: 1;
+  padding: 0;
+  opacity: 1;
+  &:focus,
+  &:hover,
+  &:active,
+  &:focus-within,
+  &:focus-visible {
+    box-shadow: none;
+    outline-offset: $outline-offset-md;
+    outline: $outline;
+    opacity: 1;
+  }
+  
+  &::before {
+    position: absolute;
+    top: 0 ;
+    left: 0;
+    color: var(--bs-body-color);
+    font-family: "Font Awesome 6 Pro";
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 400;
+    width: 2rem;
+    height: 2rem;
+    content: '\f00d';
+  }
+}
+
+.btn-close-light {
+  background: transparent escape-svg($btn-close-light-bg) center;
+}

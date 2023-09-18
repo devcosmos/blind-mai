@@ -1,0 +1,17 @@
+/*--------------------------------------------------
+  Fotorama
+----------------------------------------------------*/
+
+.fotorama__img {
+  border-radius: $border-radius-lg !important;
+}
+
+.fotorama__nav {
+  .fotorama__thumb {
+    border-radius: $border-radius !important;
+  }
+  .fotorama__thumb-border {
+    border-radius: $border-radius !important;
+    border: $border-width solid $border-color !important;
+  }
+}

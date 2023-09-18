@@ -1,0 +1,36 @@
+/*------------------------------------
+  Pagination
+------------------------------------*/
+
+.page-item {
+  &:not(:last-child) {
+    margin-right: $pagination-item-margin-x;
+  }
+  &::before {
+    content: none!important;
+  }
+  &.active .page-link {
+    cursor: default;
+    outline: none;
+    // border-color: var(--bs-bg-color);
+    // border: $border-width solid var;
+    // outline: $outline;
+    // outline-offset: $outline-offset-xs;
+  }
+}
+
+.page-link {
+  // border: $border-color solid $border-width;
+  min-width: $pagination-link-min-width;
+  text-align: center;
+  cursor: pointer;
+  @include border-radius($pagination-border-radius);
+  &:focus ,
+  &:hover,
+  &:active,
+  &:focus-within,
+  &:focus-visible {
+    outline: $outline;
+    outline-offset: $outline-offset-xs;
+  }
+}

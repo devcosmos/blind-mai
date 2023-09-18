@@ -1,0 +1,109 @@
+html[data-theme='white'] {
+  --logo-color: #0094D9;
+  --logo-color-second: white;
+  --bs-body-bg: white;
+  --bs-body-color: black;
+  --bs-link-color: black;
+  --bs-link-hover-color: black;
+  --border-color: black;
+  --btn-color: white;
+  --btn-bg-color: black;
+  --active-input-border-color: black;
+  --selection-color: white;
+  --selection-bg-color: rgba(0, 0, 0, 0.6);
+  --img-filter: grayscale(100%);
+  --scrollbar-bg-color: #bbbbbb;
+  --scrollbar-color: black;
+  .navbar {
+    --bs-navbar-color: black;
+    --bs-navbar-hover-color: black;
+  }
+}
+
+html[data-theme='dark'] {
+  --logo-color: #{$gray-800};
+  --logo-color-second: white;
+  --bs-body-bg: #{$gray-800};
+  --bs-body-color: white;
+  --bs-link-color: white;
+  --bs-link-hover-color: white;
+  --border-color: white;
+  --btn-color: black;
+  --btn-bg-color: white;
+  --active-input-border-color: white;
+  --selection-color: white;
+  --selection-bg-color: rgba(0, 0, 0, 0.6);
+  --img-filter: grayscale(100%);
+  --scrollbar-bg-color: #a9a8a8;
+  --scrollbar-color: white;
+  .navbar {
+    --bs-navbar-color: white;
+    --bs-navbar-hover-color: white;
+  }
+}
+
+html[data-theme='blue'] {
+  --logo-color: #244A77;
+  --logo-color-second: white;
+  --bs-body-bg: #{$blue};
+  --bs-body-color: #{$dark};
+  --bs-link-color: #{$dark};
+  --bs-link-hover-color: #{$dark};
+  --border-color: #{$dark};
+  --btn-color: white;
+  --btn-bg-color: #{$dark};
+  --active-input-border-color: black;
+  --selection-color: white;
+  --selection-bg-color: #{$dark};
+  --img-filter: grayscale(100%);
+  --scrollbar-bg-color: #84b5e1;
+  --scrollbar-color: #{$dark};
+  .navbar {
+    --bs-navbar-color: #{$dark};
+    --bs-navbar-hover-color: #{$dark};
+  }
+}
+
+html[data-theme='beige'] {
+  --logo-color: #{$beige-light};
+  --logo-color-second: #{$beige-dark};
+  --bs-body-bg: #{$beige-light};
+  --bs-body-color: #{$beige-dark};
+  --bs-link-color: #{$beige-dark};
+  --bs-link-hover-color: #{$beige-dark};
+  --border-color: #{$beige-dark};
+  --btn-color: white;
+  --btn-bg-color: #{$beige-dark};
+  --active-input-border-color: black;
+  --selection-color: white;
+  --selection-bg-color: #{$beige-dark};
+  --img-filter: grayscale(100%);
+  --scrollbar-bg-color: #c3bca3;
+  --scrollbar-color: #{$beige-dark};
+  .navbar {
+    --bs-navbar-color: #{$beige-dark};
+    --bs-navbar-hover-color: #{$beige-dark};
+  }
+}
+
+html[data-theme='brown'] {
+  --logo-color: #{$brown-dark};
+  --logo-color-second: #{$brown-light};
+  --bs-body-bg: #{$brown-dark};
+  --bs-body-color: #{$brown-light};
+  --bs-link-color: #{$brown-light};
+  --bs-link-hover-color: #{$brown-light};
+  --border-color: #{$brown-light};
+  --btn-color: #{$brown-dark};
+  --btn-bg-color: #{$brown-light};
+  --active-input-border-color: #{$brown-light};
+  --selection-color: white;
+  --selection-bg-color: #{$brown-light};
+  --img-filter: grayscale(100%);
+  --scrollbar-bg-color: #5f6729;
+  --scrollbar-color: #{$brown-light};
+  .navbar {
+    --bs-navbar-color: #{$brown-light};
+    --bs-navbar-hover-color: #{$brown-light};
+  }
+}

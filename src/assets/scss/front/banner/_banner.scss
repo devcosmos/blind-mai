@@ -1,0 +1,42 @@
+/*------------------------------------
+  Banner
+------------------------------------*/
+
+.swiper-heroes {
+  .swiper-slide {
+    &.main {
+      width: 57%;
+      @media all and (max-width: 991.98px) {
+        width: 100%;
+      }
+      .heroes-image {
+        padding-bottom: 62%;
+      }
+    }
+    &.portrait {
+      width: 27%;
+      @media all and (max-width: 991.98px) {
+        width: 47.289%;
+      }
+      .heroes-image {
+        padding-bottom: 130.895%;
+      }
+    }
+    &.square {
+      width: 35.5%;
+      @media all and (max-width: 991.98px) {
+        width: 62.281%;
+      }
+      .heroes-image {
+        padding-bottom: 99.551%;
+      }
+    }
+  }
+  .heroes-image {
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 0;
+  }
+}
