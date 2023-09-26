@@ -1,5 +1,5 @@
 html[data-theme='white'] {
-  --logo-color: #0094D9;
+  --logo-color: #{$gray-800};
   --logo-color-second: white;
   --bs-body-bg: white;
   --bs-body-color: black;
