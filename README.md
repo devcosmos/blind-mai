@@ -1,4 +1,4 @@
-### Documentation and Getting Started ###
+### Getting Started ###
 
 Below is quick steps to run Gulp:
 
