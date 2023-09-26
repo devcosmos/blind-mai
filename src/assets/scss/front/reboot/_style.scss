@@ -8,15 +8,18 @@
     outline: none !important;
   }
 }
+
 article {
   .h1, .h2, .h3, .h4, .h5, .h6,
   h1, h2, h3, h4, h5, h6 {
     margin-top: 2rem;
   }
 }
+
 .post-article img {
  border-radius: $border-radius;
 }
+
 h1 + h3, h1 + h4, h1 + h5, h1 + h6, 
 h2 + h3, h2 + h4, h2 + h5, h2 + h6, 
 h3 + h2, h3 + h4, h3 + h5, h3 + h6, 
@@ -30,42 +33,44 @@ h4:first-child, h5:first-child, h6:first-child,
   margin-top: 0;
 }
 
-a:not(.card) {
-  text-underline-offset: $outline-offset;
-  border-radius: $border-radius-xs;
-  // transition: outline .15s ease-in-out; 
-  &:focus,
-  &:hover,
-  &:active,
-  &:focus-within,
-  &:focus-visible {
-    outline-offset: $outline-offset-xs;
-    outline: $outline;
+a {
+  &:not(.card) {
+    text-underline-offset: $outline-offset;
+    border-radius: $border-radius-xs; 
+    &:focus,
+    &:hover,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+      outline-offset: $outline-offset-xs;
+      outline: $outline;
+    }
+  }
+  &.nav-link,
+  &.list-group-item {
+    &:focus,
+    &:hover,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+      outline: none;
+      text-decoration: underline;
+    }
+  }
+  &.card {
+    border-radius: var(--bs-border-radius-lg);
+    text-decoration: none;
+    &:focus,
+    &:hover,
+    &:active,
+    &:focus-within,
+    &:focus-visible {
+      outline-offset: $outline-offset-md;
+      outline: $outline;
+    }
   }
 }
-a.nav-link,
-a.list-group-item {
-  &:focus,
-  &:hover,
-  &:active,
-  &:focus-within,
-  &:focus-visible {
-    outline: none;
-    text-decoration: underline;
-  }
-}
-a.card {
-  border-radius: var(--bs-border-radius-lg);
-  text-decoration: none;
-  &:focus,
-  &:hover,
-  &:active,
-  &:focus-within,
-  &:focus-visible {
-    outline-offset: $outline-offset-md;
-    outline: $outline;
-  }
-}
+
 .form-control {
   border-color: var(--border-color);
   background-color: var(--bs-body-bg);
@@ -80,6 +85,7 @@ a.card {
     color: var(--bs-body-color);
   }
 }
+
 p, div, a {
   color: var(--bs-body-color);
 }
