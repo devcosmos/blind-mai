@@ -3,12 +3,8 @@
 ------------------------------------*/
 
 .navbar {
-  // display: block;
   z-index: $navbar-z-index;
-  //custom
-  margin-right: calc(-1 * (100vw - 100%));
   overflow-x: hidden;
-  border-bottom: 2px solid var(--border-color);
   padding: 0;
   min-height: $navbar-height;
   display: flex;
@@ -33,12 +29,10 @@
 
 .navbar-nav {
   flex-grow: 1;
+  border: var(--bs-border-width) solid var(--border-color);
+  border-radius: 50px;
+  padding: 10px 30px;
 }
-
-// Shadow
-// .navbar-shadow {
-//   box-shadow: $navbar-box-shadow;
-// }
 
 // Height
 .navbar-height {
