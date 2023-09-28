@@ -65,7 +65,7 @@ a {
     &:active,
     &:focus-within,
     &:focus-visible {
-      outline-offset: $outline-offset-md;
+      outline-offset: $outline-offset-sm;
       outline: $outline;
     }
   }
