@@ -47,6 +47,9 @@ body._open {
       text-overflow: ellipsis;
       padding-left: var(--gap-touch-x);
       text-decoration: none;
+      @media (max-width: 767.98px) {
+        font-size: 1em;
+      }
     }
   }
 
@@ -79,7 +82,9 @@ body._open {
 	height: calc(100vw/3);
 	padding: 2vmax;
 	margin: calc(var(--gap-tile)/2);
-	background-color: var(--bs-body-color);
+	background-color: var(--bs-body-bg);
+  border: var(--bs-border-color) solid var(--bs-border-width);
+  text-decoration: none;
   @media all and (min-width: 768px) {
     width: calc(33.33% - var(--gap-tile)); 
   }
@@ -88,12 +93,12 @@ body._open {
   }
 
   i {
-    color: var(--bs-body-bg);
+    color: var(--bs-body-color);
     font-size: 1.2em;
   }
 
   .mob__tile-text {
-    color: var(--bs-body-bg) !important;
+    color: var(--bs-body-color) !important;
     font-size: .85em;	
     line-height: 1.4;
     font-weight: var(--font-medium);
@@ -138,6 +143,12 @@ body._open {
         font-family: var(--font-family-fa);
         font-weight: var(--font-regular);
         line-height: 1.5;
+        @media (max-width: 767.98px) {
+          font-size: 1.2em;
+        }
+        @media (min-width: 768px) {
+          margin-right: 35px;
+        }
       }
     }
   }
@@ -147,7 +158,7 @@ body._open {
     padding-left: var(--gap-touch-x);
     line-height: 1.5;	
     text-transform: uppercase;
-    font-size: .75em;	
+    font-size: .9em;	
     font-weight: var(--font-semibold);
     display: block;
     margin-right: 15vw;
@@ -160,6 +171,9 @@ body._open {
     &:focus-visible {
       outline: none;
       opacity: .7;
+    }
+    @media (max-width: 767.98px) {
+      font-size: 1em;
     }
 
     i {
@@ -187,10 +201,39 @@ body._open {
 	padding: 5px;
 	color: var(--bs-body-color);
 	font-size: 1.6em;	
+  font-weight: 600;
   @media all and (max-width: 575.98px) {
 		padding: var(--gap-touch-y) var(--gap-touch-x);
 		font-size: 1.4em;	
-	}	
+	}
+
+  &._hamburger {
+    margin-right: -15px;
+  }
+  &.finger-close {
+    border: 4px solid var(--border-color);
+    border-radius: 50px;
+    @media (max-width: 767.98px) {
+      border: 4px solid var(--border-color);
+      border-radius: 50px;
+    }	
+    @media (min-width: 768px) {
+      margin-right: 15px;
+      font-size: 1.1em;
+      i {
+        width: 1.5em;	
+      }
+    }
+  }
+  .far {
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 768px) {
+	.finger {
+		align-self: center;
+	}
 }
 
 .mobile-nav-path._home .finger-go-back {
