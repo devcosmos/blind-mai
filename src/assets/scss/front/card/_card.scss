@@ -67,14 +67,14 @@
 }
 
 // Transition
-.card-transition {
-  transition: $card-transition;
+// .card-transition {
+//   transition: $card-transition;
 
-  &:hover,
-  &:focus {
-    transform: translateY($card-transition-translateY) !important; // !important need to override the aos.js animation properties
-  }
-}
+//   &:hover,
+//   &:focus {
+//     transform: translateY($card-transition-translateY) !important; // !important need to override the aos.js animation properties
+//   }
+// }
 
 // Ghost
 .card-ghost {
